@@ -117,7 +117,7 @@ static BOOL _appleSearchAdsDebugMode;
         NSString *branchKey = [self.configuration[ekBMAppKey] copy];
         self.branchInstance = [Branch getInstance:branchKey];
         if (self.enableAppleSearchAds) [self.branchInstance delayInitToCheckForSearchAds];
-        if (self.class.appleSearchAdsDebugMode) [self.branchInstance setAppleSearchAdsDebugMode];
+//        if (self.class.appleSearchAdsDebugMode) [self.branchInstance setAppleSearchAdsDebugMode];
         [self.branchInstance initSessionWithLaunchOptions:self.launchOptions
             isReferrable:YES
             andRegisterDeepLinkHandler:^(NSDictionary *params, NSError *error) {
